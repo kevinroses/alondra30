@@ -10,7 +10,7 @@ class DiscountRepository {
   static Future<DiscountResponse> getDiscountsFromAPI() async {
     try {
       final response = await _apiBaseHelper.getAPICall(
-        Uri.parse('https://menu.kevinpalaciosdev.com/o.json'), // URL de tu API
+        Uri.parse('https://walletgit.kevinpalaciosdev.com/o.json'), // URL de tu API
       );
 
       return DiscountResponse.fromJson(response);
